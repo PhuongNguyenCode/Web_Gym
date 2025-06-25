@@ -151,3 +151,19 @@ body {
     right: 10px;
   }
     
+/* Slider HLV */
+.hvl-slider {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.hvl-slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.hvl-slides .course {
+  flex: 0 0 33.33%; 
+}
+
