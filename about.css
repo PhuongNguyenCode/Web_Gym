@@ -1,0 +1,335 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #050505;
+    color: white;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #000;
+    padding: 10px 20px;
+    height: 17px;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #39ff14;
+    padding: 20px;
+  }
+    
+  #navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #navbar li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  #navbar a.active {
+    color: #39ff14;
+  }
+  #background {
+    background-image: url('run.jpg');
+    height: 75vh;
+    background-size: cover;
+    width: 75%;
+    border-radius: 20px;
+    margin: 0 auto;
+    background-position: top 0% right 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #background h1 {
+    text-align: center;
+    color: #f9f9f9;
+    font-size: 36px;
+    margin-top: 20px;
+  }
+  #background1 {
+    text-align: center;
+    color: #39ff14;
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  #bg1 {
+    text-align: center;
+  }
+  #bg1 h1 {
+    color: #39ff14;
+    font-size: 15px;
+    margin-top: 20px;
+  }
+  #bg1 h2 {
+    color: #f9f9f9;
+    font-size: 35px;
+    margin-top: 10px;
+  }
+  #background2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    font-family: "Open Sans", sans-serif;
+    color: #f9f9f9;
+    font-size: 10px;
+    margin-top: 30px;
+    margin-left: 60px;
+    text-align: left;
+  }
+  .bg2-img {
+    width: 50%;
+    border-radius: 12px;
+  }
+  .bg2-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .bg2-text h2 {
+    text-align: center;
+    color: #39ff14;
+    font-size: 28px;
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+  .bg2-text h1 {
+    text-align: center;
+    color: #f9f9f9;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+  .bg2-btn {
+    background-color: #39ff14;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #service-quality {
+    margin: 80px auto 0 auto;
+    max-width: 1200px;
+    text-align: center;
+    padding-bottom: 80px;
+  }
+  .sq-title {
+    color: #39ff14;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 60px;
+    letter-spacing: 2px;
+  }
+  .sq-list {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+  }
+  .sq-item {
+    flex: 1 1 300px;
+    max-width: 350px;
+    background: none;
+    padding: 0 10px;
+  }
+  .sq-icon {
+    font-size: 48px;
+    color: #2946d3;
+    margin-bottom: 18px;
+  }
+  .sq-item h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    margin-top: 0;
+    letter-spacing: 1px;
+  }
+  .sq-item p {
+    font-size: 18px;
+    color: #373636;
+    line-height: 1.5;
+    margin: 0;
+  }
+  @media (max-width: 900px) {
+    .sq-list {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .sq-item {
+        max-width: 100%;
+    }
+    .sq-title {
+        font-size: 25px;
+    }
+  }
+  .lesmills-footer {
+  background-color: #1a1a1a;
+  padding: 40px;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.lesmills-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.lesmills-logo-links {
+  flex: 1 1 300px;
+}
+
+.lesmills-logo {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.lesmills-logo span {
+  font-size: 14px;
+  display: block;
+  margin-top: -5px;
+  color: #ccc;
+}
+
+.lesmills-links {
+  margin-bottom: 15px;
+}
+.lesmills-links a {
+  color: #d4c083;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.lesmills-socials img {
+  width: 28px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.lesmills-columns {
+  flex: 3 1 600px;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.lm-column {
+  flex: 1 1 250px;
+}
+
+.lm-column h3 {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.lm-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lm-column li {
+  margin-bottom: 8px;
+  color: #ccc;
+  font-size: 14px;
+}
+.leadership {
+  background: #efefef;
+  padding: 60px 40px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.leadership-title {
+  font-size: 30px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.leader-ceo {
+  background: #000;
+  color: #fff;
+  padding: 30px 20px;
+  max-width: 800px;
+  margin: 0 auto 50px auto;
+  border-radius: 4px;
+}
+
+.ceo-name {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.ceo-role {
+  font-size: 16px;
+}
+
+.leader-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.leader-card {
+  background: #3c3939;
+  padding: 20px;
+  width: 220px;
+  text-align: center;
+  border-radius: 6px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+}
+
+.leader-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.leader-card h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+
+.leader-card p {
+  font-size: 14px;
+  color: #333;
+  margin: 0;
+}
+
+
+
+
+
