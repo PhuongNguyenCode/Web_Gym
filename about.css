@@ -13,12 +13,14 @@ body {
     padding: 10px 20px;
     height: 17px;
   }
+  
   .logo {
     font-size: 24px;
     font-weight: bold;
     color: #39ff14;
     padding: 20px;
   }
+    
   #navbar {
     display: flex;
     align-items: center;
@@ -299,7 +301,7 @@ body {
 }
 
 .leader-card {
-  background: #8a8686;
+  background: #3c3939;
   padding: 20px;
   width: 220px;
   text-align: center;
