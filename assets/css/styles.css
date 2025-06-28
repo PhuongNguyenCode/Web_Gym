@@ -1,3 +1,4 @@
+
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
 
@@ -30,6 +31,88 @@
 
   --z-tooltip: 10;
   --z-fixed: 100;
+}
+/*=============== NAVBAR ===============*/
+/* =============== NAVIGATION BAR =============== */
+.nav {
+  background-color: #000;
+  padding: 20px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* chuyển trục dọc */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav__logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #39ff14;
+  margin-bottom: 10px;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav__list a {
+  font-weight: 600;
+  font-size: 1rem;
+  color: white;
+  transition: color 0.3s;
+  text-decoration: none;
+}
+
+.nav__list a:hover,
+.nav__list a.active {
+  color: #39ff14;
+}
+
+
+
+.nav__container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo {
+  font-size: 1.25rem;
+  font-weight: var(--font-semi-bold);
+  color: #ffd700; /* Màu vàng neon */
+  text-transform: uppercase;
+}
+
+.nav__menu {
+  display: flex;
+}
+
+.nav__list {
+  list-style: none;     /* Xoá dấu chấm */
+  display: flex;        /* Hiển thị ngang */
+  gap: 2rem;            /* Khoảng cách giữa các mục */
+  padding-left: 0;      /* Xoá padding mặc định */
+}
+
+.nav__list li a {
+  color: #ffd700; /* Màu vàng neon */
+  font-weight: var(--font-semi-bold);
+  font-size: var(--small-font-size);
+  transition: color 0.3s;
+}
+
+.nav__list li a:hover {
+  color: var(--first-color);
+  text-shadow: 0 0 5px #ffd700, 0 0 10px #ffd700;
 }
 
 /*========== Kích thước chữ khi màn hình lớn ==========*/
