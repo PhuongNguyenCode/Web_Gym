@@ -1,39 +1,39 @@
 
-/*=============== SHOW HIDE PASSWORD LOGIN ===============*/
+/*=============== HIỆN/ẨN MẬT KHẨU TRONG FORM ĐĂNG NHẬP ===============*/
 const passwordAccess = (loginPass, loginEye) =>{
    const input = document.getElementById(loginPass),
          iconEye = document.getElementById(loginEye)
 
    iconEye.addEventListener('click', () =>{
-      // Change password to text
+       // Đổi kiểu từ mật khẩu sang văn bản và ngược lại
       input.type === 'password' ? input.type = 'text'
 						              : input.type = 'password'
 
-      // Icon change
+       // Đổi biểu tượng con mắt (hiện/ẩn mật khẩu)
       iconEye.classList.toggle('ri-eye-fill')
       iconEye.classList.toggle('ri-eye-off-fill')
    })
 }
 passwordAccess('password','loginPassword')
 
-/*=============== SHOW HIDE PASSWORD CREATE ACCOUNT ===============*/
+/*=============== HIỆN/ẨN MẬT KHẨU TRONG FORM ĐĂNG KÝ ===============*/
 const passwordRegister = (loginPass, loginEye) =>{
    const input = document.getElementById(loginPass),
          iconEye = document.getElementById(loginEye)
 
    iconEye.addEventListener('click', () =>{
-      // Change password to text
+       // Đổi kiểu từ mật khẩu sang văn bản và ngược lại
       input.type === 'password' ? input.type = 'text'
 						              : input.type = 'password'
 
-      // Icon change
+      // Đổi biểu tượng con mắt (hiện/ẩn mật khẩu)
       iconEye.classList.toggle('ri-eye-fill')
       iconEye.classList.toggle('ri-eye-off-fill')
    })
 }
 passwordRegister('passwordCreate','loginPasswordCreate')
 
-/*=============== SHOW HIDE LOGIN & CREATE ACCOUNT ===============*/
+/*=============== CHUYỂN ĐỔI GIỮA GIAO DIỆN ĐĂNG NHẬP VÀ ĐĂNG KÝ ===============*/
 const loginAcessRegister = document.getElementById('loginAccessRegister'),
       buttonRegister = document.getElementById('loginButtonRegister'),
       buttonAccess = document.getElementById('loginButtonAccess')
