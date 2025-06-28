@@ -1,9 +1,9 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
 
-/*=============== VARIABLES CSS ===============*/
+/*=============== BIẾN CSS ===============*/
 :root {
-  /*========== Colors ==========*/
+  /*========== Màu sắc ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
   --first-color: hsl(208, 92%, 54%);
   --first-color-alt: hsl(208, 88%, 50%);
@@ -13,7 +13,7 @@
   --body-color: hsl(0, 0%, 100%);
   --container-color: hsl(220, 50%, 97%);
 
-  /*========== Font and typography ==========*/
+  /*========== Phông chữ và kiểu chữ ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: "Montserrat", system-ui;
   --big-font-size: 1.5rem;
@@ -21,17 +21,18 @@
   --small-font-size: .813rem;
   --tiny-font-size: .688rem;
 
-  /*========== Font weight ==========*/
+    /*========== Độ đậm chữ ==========*/
   --font-regular: 400;
   --font-medium: 500;
   --font-semi-bold: 600;
 
-  /*========== z index ==========*/
+    /*========== Chỉ số z ==========*/
+
   --z-tooltip: 10;
   --z-fixed: 100;
 }
 
-/*========== Responsive typography ==========*/
+/*========== Kích thước chữ khi màn hình lớn ==========*/
 @media screen and (min-width: 1150px) {
   :root {
     --big-font-size: 3rem;
@@ -41,7 +42,7 @@
   }
 }
 
-/*=============== BASE ===============*/
+/*=============== CÀI ĐẶT CƠ BẢN ===============*/
 * {
   box-sizing: border-box;
   padding: 0;
@@ -76,7 +77,8 @@ img {
   height: auto;
 }
 
-/*=============== REUSABLE CSS CLASSES ===============*/
+/*=============== CLASS TÁI SỬ DỤNG ===============*/
+
 .container {
   max-width: 1120px;
   margin-inline: 1.5rem;
@@ -87,7 +89,7 @@ img {
   gap: 1rem;
 }
 
-/*=============== LOGIN  ===============*/
+/*=============== ĐĂNG NHẬP ===============*/
 .login {
   position: relative;
   height: 100vh;
@@ -251,7 +253,7 @@ img {
   pointer-events: none;
 }
 
-/* Input focus move up label */
+/* Khi focus vào input thì label di chuyển lên trên */
 .login__input:focus ~ .login__label {
   transform: translateY(-12px);
   font-size: var(--tiny-font-size);
@@ -261,7 +263,7 @@ img {
   padding-block: 2rem 1rem;
 }
 
-/* Input focus sticky top label */
+/* Giữ label ở trên nếu có nội dung */
 .login__input:not(:placeholder-shown).login__input:not(:focus) ~ .login__label {
   transform: translateY(-12px);
   font-size: var(--tiny-font-size);
@@ -271,7 +273,7 @@ img {
   padding-block: 2rem 1rem;
 }
 
-/* Input focus color */
+/* Màu khi focus */
 .login__input:focus {
   border-color: var(--first-color);
 }
@@ -281,7 +283,7 @@ img {
   color: var(--first-color);
 }
 
-/* Show hide login & create account */
+/* Chuyển qua lại giữa đăng nhập và đăng ký */
 .active .login__access {
   transform: translateX(15rem);
   opacity: 0;
@@ -294,15 +296,15 @@ img {
   pointer-events: initial;
 }
 
-/*=============== BREAKPOINTS ===============*/
-/* For small devices */
+/*=============== BREAKPOINTS - ĐIỂM DỪNG ===============*/
+/* Cho màn hình nhỏ */
 @media screen and (max-width: 320px) {
   .container {
     margin-inline: 1rem;
   }
 }
 
-/* For medium devices */
+/* Cho màn hình trung bình */
 @media screen and (min-width: 540px) {
   .login__area {
     width: 380px;
@@ -316,7 +318,7 @@ img {
   }
 }
 
-/* For large devices */
+/* Cho màn hình lớn */
 @media screen and (min-width: 1150px) {
   .container {
     margin-inline: auto;
